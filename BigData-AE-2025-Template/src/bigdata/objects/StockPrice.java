@@ -1,6 +1,7 @@
 package bigdata.objects;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 
 import org.apache.spark.sql.Row;
 
@@ -31,7 +32,7 @@ public class StockPrice implements Serializable{
 	double volume; // Number of Units Traded during the Day
 	
 	String stockTicker; // Company Stock Ticker
-	
+	private LocalDate date;
 	/**
 	 * Builds a StockPrice instance based on a Spark SQL row, which is what is read from the input file.
 	 * The input file is in CSV format, where each row contains: Date,Open,High,Low,Close,Adj Close,Volume,Stock 
@@ -41,8 +42,12 @@ public class StockPrice implements Serializable{
 		
 		
 		try {
+			if (row == null || row.length() < 8) {
+				throw new IllegalArgumentException("Invalid row format: " + row);
+			}
 			// Perform manual date parsing
 			String[] dateString = row.getString(0).split("-"); // e.g. 1999-11-18
+			date = LocalDate.parse(row.getString(0));
 			year = Short.parseShort(dateString[0]);
 			month = Short.parseShort(dateString[1]);
 			day = Short.parseShort(dateString[2]);
@@ -62,7 +67,7 @@ public class StockPrice implements Serializable{
 			
 			
 		} catch (Exception e) {
-			System.err.println(row.toString());
+			System.err.println("Error parsing row: " + row.toString());
 			e.printStackTrace();
 		}
 	}
@@ -146,31 +151,39 @@ public class StockPrice implements Serializable{
 	public void setStockTicker(String stockTicker) {
 		this.stockTicker = stockTicker;
 	}
-	
-	public String toString() {
-		StringBuilder textBuffer = new StringBuilder();
-		textBuffer.append(day);
-		textBuffer.append("/");
-		textBuffer.append(month);
-		textBuffer.append("/");
-		textBuffer.append(year);
-		textBuffer.append(" ");
-		textBuffer.append(openPrice);
-		textBuffer.append(" ");
-		textBuffer.append(highPrice);
-		textBuffer.append(" ");
-		textBuffer.append(lowPrice);
-		textBuffer.append(" ");
-		textBuffer.append(closePrice);
-		textBuffer.append(" ");
-		textBuffer.append(adjustedClosePrice);
-		textBuffer.append(" ");
-		textBuffer.append(volume);
-		textBuffer.append(" ");
-		textBuffer.append(stockTicker);
-		
-		return textBuffer.toString();
+
+	public LocalDate getDate() {
+		return date;
 	}
 
-	
+	public void setDate(LocalDate date) {
+		this.date = date;
+	}
+	public String toString() {
+		return String.format("%s %f %f %f %f %f %f %s",
+				date, openPrice, highPrice, lowPrice, closePrice, adjustedClosePrice, volume, stockTicker);
+//		StringBuilder textBuffer = new StringBuilder();
+//		textBuffer.append(day);
+//		textBuffer.append("/");
+//		textBuffer.append(month);
+//		textBuffer.append("/");
+//		textBuffer.append(year);
+//		textBuffer.append(" ");
+//		textBuffer.append(openPrice);
+//		textBuffer.append(" ");
+//		textBuffer.append(highPrice);
+//		textBuffer.append(" ");
+//		textBuffer.append(lowPrice);
+//		textBuffer.append(" ");
+//		textBuffer.append(closePrice);
+//		textBuffer.append(" ");
+//		textBuffer.append(adjustedClosePrice);
+//		textBuffer.append(" ");
+//		textBuffer.append(volume);
+//		textBuffer.append(" ");
+//		textBuffer.append(stockTicker);
+//
+//		return textBuffer.toString();
+	}
+
 }

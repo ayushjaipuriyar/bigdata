@@ -1,6 +1,7 @@
 package bigdata.objects;
 
 import java.io.Serializable;
+import java.util.Arrays;
 
 public class AssetRanking implements Serializable{
 
@@ -55,7 +56,7 @@ public class AssetRanking implements Serializable{
 			builder.append(a.getFeatures().getAssetReturn());
 			builder.append("\n");
 			builder.append("  - Volatility: ");
-			builder.append(a.getFeatures().getAssetVolitility());
+			builder.append(a.getFeatures().getAssetVolatility());
 			builder.append("\n");
 			builder.append("  - P/E Ratio: ");
 			builder.append(a.getFeatures().getPeRatio());
@@ -64,5 +65,18 @@ public class AssetRanking implements Serializable{
 		}
 		
 		return builder.toString();
+	}
+
+	public void addAsset(Asset asset) {
+		// Resize array if needed or shift elements to make space
+		for (int i = 0; i < assetRanking.length; i++) {
+			if (assetRanking[i] == null) {
+				assetRanking[i] = asset;
+				return;
+			}
+		}
+		// If array is full, you could expand it, e.g., double its size:
+//		assetRanking = Arrays.copyOf(assetRanking, assetRanking.length * 2);
+//		assetRanking[assetRanking.length / 2] = asset; // Add asset at the new space
 	}
 }

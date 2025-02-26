@@ -11,18 +11,26 @@ public class NullPriceFilter implements FilterFunction<Row> {
 
 	private static final long serialVersionUID = -2353664115853315391L;
 
-	@Override
-	public boolean call(Row row) throws Exception {
-		// if we find a null entry, filter out the row
-		if (row.getString(0)==null) return false;
-		if (row.getString(1)==null) return false;
-		if (row.getString(2)==null) return false;
-		if (row.getString(3)==null) return false;
-		if (row.getString(4)==null) return false; 
-		if (row.getString(5)==null) return false; 
-		if (row.getString(6)==null) return false; 
-		if (row.getString(7)==null) return false; 
-		return true;
+//	@Override
+//	public boolean call(Row row) throws Exception {
+//		// if we find a null entry, filter out the row
+//		if (row.getString(0)==null) return false;
+//		if (row.getString(1)==null) return false;
+//		if (row.getString(2)==null) return false;
+//		if (row.getString(3)==null) return false;
+//		if (row.getString(4)==null) return false;
+//		if (row.getString(5)==null) return false;
+//		if (row.getString(6)==null) return false;
+//		if (row.getString(7)==null) return false;
+//		return true;
+//	}
+@Override
+public boolean call(Row row) {
+	for (int i = 0; i < row.size(); i++) {
+		if (row.isNullAt(i)) return false;
 	}
+	return true;
+}
+
 
 }

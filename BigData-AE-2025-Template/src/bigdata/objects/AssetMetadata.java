@@ -148,4 +148,10 @@ public class AssetMetadata implements Serializable {
 	public void setGrowth(double growth) {
 		this.growth = growth;
 	}
+
+	@Override
+	public String toString() {
+		return String.format("AssetMetadata [symbol=%s, name=%s, sector=%s, industry=%s, priceEarningRatio=%.2f, growth=%.2f]",
+				symbol, name, sector, industry, priceEarningRatio, growth);
+	}
 }

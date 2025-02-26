@@ -8,8 +8,8 @@ import java.time.format.DateTimeFormatter;
 
 public class TimeUtil {
 
-	private static DateTimeFormatter dateFormatter = DateTimeFormatter.ISO_DATE_TIME;
-	private static ZoneId zoneId = ZoneId.of("Europe/London");
+	private static final DateTimeFormatter dateFormatter = DateTimeFormatter.ISO_DATE_TIME;
+	private static final ZoneId zoneId = ZoneId.of("Europe/London");
 	
 	public static Instant fromDate(short year, short month, short day) {
 		
