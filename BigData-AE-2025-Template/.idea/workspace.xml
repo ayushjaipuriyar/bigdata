@@ -5,50 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67e4a700-764a-4008-867d-e04f20f2617e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ayush.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.apt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/logs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/SPARK.DONE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bigdata/app/AssessedExercise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bigdata/app/AssessedExercise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bigdata/objects/AssetFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bigdata/objects/AssetFeatures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bigdata/objects/AssetMetadata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bigdata/objects/AssetMetadata.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bigdata/objects/AssetRanking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bigdata/objects/AssetRanking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bigdata/objects/StockPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bigdata/objects/StockPrice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bigdata/technicalindicators/Returns.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bigdata/technicalindicators/Returns.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bigdata/technicalindicators/Volatility.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bigdata/transformations/filters/NullPriceFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bigdata/transformations/filters/NullPriceFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bigdata/util/TimeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bigdata/util/TimeUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bigdata/util/TimeUtilFunctions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bigdata/app/AssessedExercise.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bigdata/objects/Asset.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bigdata/objects/AssetFeatures.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bigdata/objects/AssetMetadata.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bigdata/objects/AssetRanking.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bigdata/objects/StockPrice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bigdata/technicalindicators/Returns.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bigdata/technicalindicators/Volatility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bigdata/transformations/filters/NullPriceFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bigdata/transformations/maps/PriceReaderMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bigdata/transformations/pairing/AssetMetadataPairing.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bigdata/util/MathUtils$CumSum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bigdata/util/MathUtils$Diff.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bigdata/util/MathUtils$ExponentialMovingAverage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bigdata/util/MathUtils$TrueRange.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bigdata/util/MathUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bigdata/util/TimeUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bigdata/util/TimeUtilFunctions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,29 +38,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Application.AssessedExercise.executor": "Run",
-    "Maven.BigData-AE-2025-Template.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/ayush/Documents/GLA/BIg Data/coursework",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "settings.qodana",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Application.AssessedExercise.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.BigData-AE-2025-Template.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ayush/Documents/GLA/BIg Data/coursework&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.qodana&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.AssessedExercise">
     <configuration name="AssessedExercise" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="/usr/lib/jvm/java-21-openjdk" />
@@ -175,6 +134,7 @@
       <workItem from="1740426737555" duration="110000" />
       <workItem from="1740429300105" duration="12516000" />
       <workItem from="1740520923301" duration="7780000" />
+      <workItem from="1740565633988" duration="43000" />
     </task>
     <servers />
   </component>
