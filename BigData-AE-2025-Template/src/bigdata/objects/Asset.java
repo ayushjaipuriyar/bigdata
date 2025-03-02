@@ -74,5 +74,17 @@ public class Asset implements Comparable<Asset>,Serializable{
 	public int compareTo(Asset o) {
 		return Double.compare(features.assetReturn, o.getFeatures().assetReturn);
 	}
-	
+
+	@Override
+	public String toString() {
+        return "Asset Details:\n" +
+                "  - Ticker: " + ticker + "\n" +
+                "  - Name: " + (name != null ? name : "N/A") + "\n" +
+                "  - Industry: " + (industry != null ? industry : "N/A") + "\n" +
+                "  - Sector: " + (sector != null ? sector : "N/A") + "\n" +
+                "  - Returns: " + (features != null ? features.getAssetReturn() : "N/A") + "\n" +
+                "  - Volatility: " + (features != null ? features.getAssetVolatility() : "N/A") + "\n" +
+                "  - P/E Ratio: " + (features != null ? features.getPeRatio() : "N/A") + "\n";
+	}
+
 }

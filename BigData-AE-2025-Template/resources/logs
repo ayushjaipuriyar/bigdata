@@ -1,0 +1,28 @@
+Dataset<Row> calculatedStats = filteredPrices.groupBy("stockTicker")
+    .agg(functions.collect_list("price").alias("prices"))
+    .map(new CalculateStats(), Encoders.tuple(Encoders.STRING(), Encoders.DOUBLE(), Encoders.DOUBLE()))
+    .toDF("stockTicker", "returns", "volatility");
+
+
+
+    		Dataset<Row> calculatedStats = filteredPrices.groupBy("stockTicker")
+    				.agg(
+    						functions.collect_list("price").alias("prices")
+    				)
+    				.map((MapFunction<Row, Tuple3<String, Double, Double>>) row -> {
+    					// Extract the stock ticker and prices list
+    					String ticker = row.getAs("stockTicker");
+    					List<Double> pricesList = row.getAs("prices");
+
+    					// Calculate the 5-day return on investment (ROI)
+    					double roi = Returns.calculate(5, pricesList);
+
+    					// Calculate volatility based on the last 251 days of prices
+    					int numDays = Math.min(pricesList.size(), 251);
+    					List<Double> recentPrices = pricesList.subList(pricesList.size() - numDays, pricesList.size());
+    					double vol = Volatility.calculate(recentPrices);
+
+    					// Return a Tuple3 with ticker, ROI, and volatility
+    					return new Tuple3<>(ticker, roi, vol);
+    				}, Encoders.tuple(Encoders.STRING(), Encoders.DOUBLE(), Encoders.DOUBLE()))
+    				.toDF("stockTicker", "returns", "volatility");

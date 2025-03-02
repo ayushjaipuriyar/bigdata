@@ -62,8 +62,8 @@ public class AssetMetadata implements Serializable {
 	 * Build an AssetMetadata object from a row
 	 * @param assetRow
 	 */
-	public AssetMetadata(Row assetRow) {
-		
+	public AssetMetadata(Row assetRow,String priceEarningRatioFieldName) {
+
 		{int index = assetRow.fieldIndex("symbol"); if (!assetRow.isNullAt(index)) symbol = assetRow.getString(index);}
 		{int index = assetRow.fieldIndex("isin"); if (!assetRow.isNullAt(index)) isin = assetRow.getString(index);}
 		{int index = assetRow.fieldIndex("figi"); if (!assetRow.isNullAt(index)) figi = assetRow.getString(index);}
@@ -71,8 +71,8 @@ public class AssetMetadata implements Serializable {
 		{int index = assetRow.fieldIndex("description"); if (!assetRow.isNullAt(index)) description = assetRow.getString(index);}
 		{int index = assetRow.fieldIndex("industry"); if (!assetRow.isNullAt(index)) industry = assetRow.getString(index);}
 		{int index = assetRow.fieldIndex("sector"); if (!assetRow.isNullAt(index)) sector = assetRow.getString(index);}
-		
-		try {int index = assetRow.fieldIndex("price_earning_ratio"); if (!assetRow.isNullAt(index)) priceEarningRatio = assetRow.getDouble(index);} catch (Exception e) {}
+
+		try {int index = assetRow.fieldIndex(priceEarningRatioFieldName); if (!assetRow.isNullAt(index)) priceEarningRatio = assetRow.getDouble(index);} catch (Exception e) {}
 		try {int index = assetRow.fieldIndex("growth"); if (!assetRow.isNullAt(index)) growth = assetRow.getDouble(index);} catch (Exception e) {}
 		
 	}

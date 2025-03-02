@@ -1,0 +1,13 @@
+/home/ayush/media/Documents/GLA/BIg Data/coursework/BigData-AE-2025-Template/src/bigdata/objects/StockPrice.java
+/home/ayush/media/Documents/GLA/BIg Data/coursework/BigData-AE-2025-Template/src/bigdata/transformations/maps/PriceReaderMap.java
+/home/ayush/media/Documents/GLA/BIg Data/coursework/BigData-AE-2025-Template/src/bigdata/objects/AssetFeatures.java
+/home/ayush/media/Documents/GLA/BIg Data/coursework/BigData-AE-2025-Template/src/bigdata/technicalindicators/Volitility.java
+/home/ayush/media/Documents/GLA/BIg Data/coursework/BigData-AE-2025-Template/src/bigdata/util/TimeUtil.java
+/home/ayush/media/Documents/GLA/BIg Data/coursework/BigData-AE-2025-Template/src/bigdata/objects/Asset.java
+/home/ayush/media/Documents/GLA/BIg Data/coursework/BigData-AE-2025-Template/src/bigdata/transformations/filters/NullPriceFilter.java
+/home/ayush/media/Documents/GLA/BIg Data/coursework/BigData-AE-2025-Template/src/bigdata/technicalindicators/Returns.java
+/home/ayush/media/Documents/GLA/BIg Data/coursework/BigData-AE-2025-Template/src/bigdata/app/AssessedExercise.java
+/home/ayush/media/Documents/GLA/BIg Data/coursework/BigData-AE-2025-Template/src/bigdata/objects/AssetRanking.java
+/home/ayush/media/Documents/GLA/BIg Data/coursework/BigData-AE-2025-Template/src/bigdata/transformations/pairing/AssetMetadataPairing.java
+/home/ayush/media/Documents/GLA/BIg Data/coursework/BigData-AE-2025-Template/src/bigdata/objects/AssetMetadata.java
+/home/ayush/media/Documents/GLA/BIg Data/coursework/BigData-AE-2025-Template/src/bigdata/util/MathUtils.java

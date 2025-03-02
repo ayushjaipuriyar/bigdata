@@ -1,0 +1,7 @@
+bigdata/objects/Asset.class
+bigdata/objects/AssetFeatures.class
+bigdata/transformations/maps/PriceReaderMap.class
+bigdata/util/TimeUtil.class
+bigdata/transformations/filters/NullPriceFilter.class
+bigdata/objects/StockPrice.class
+bigdata/technicalindicators/Volitility.class
